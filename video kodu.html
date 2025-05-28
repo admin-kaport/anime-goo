@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>video kodu</title>
+  <style>
+
+    .nav-links {
+      display: flex;
+      gap: 20px;
+    }
+
+    .nav-links a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .search-box input {
+      padding: 8px 12px;
+      border: none;
+      border-radius: 4px;
+    }
+
+
+
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #0f0f0f;
+      color: #f1f1f1;
+      display: flex;
+      min-height: 100vh;
+    }
+
+    .sidebar {
+      width: 280px;
+      background-color: #1a1a1a;
+      padding: 20px;
+      border-left: 1px solid #333;
+    }
+
+    .sidebar h2 {
+      font-size: 18px;
+      margin-bottom: 12px;
+      border-bottom: 1px solid #333;
+      padding-bottom: 5px;
+    }
+
+    .sidebar ul {
+      list-style: none;
+      padding: 0;
+      margin-bottom: 30px;
+    }
+
+    .sidebar li {
+      margin: 10px 0;
+    }
+
+    .sidebar a {
+      color: #ccc;
+      text-decoration: none;
+      transition: color 0.3s;
+    }
+
+    .sidebar a:hover {
+      color: #00bcd4;
+    }
+
+    .main {
+      flex: 1;
+      padding: 40px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
+    }
+
+    .video-wrapper {
+      width: 100%;
+      max-width: 900px;
+      aspect-ratio: 16 / 9;
+      background-color: #000;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 0 10px rgba(0,0,0,0.5);
+      margin-bottom: 30px;
+    }
+
+    .video-wrapper iframe {
+      width: 100%;
+      height: 100%;
+      border: none;
+    }
+
+    .description {
+      max-width: 900px;
+      background-color: #1e1e1e;
+      padding: 20px;
+      border-radius: 10px;
+      line-height: 1.6;
+      box-shadow: 0 0 10px rgba(0,0,0,0.4);
+    }
+
+    .description h2 {
+      margin-bottom: 10px;
+      font-size: 20px;
+      color: #00bcd4;
+    }
+
+    @media (max-width: 768px) {
+      body {
+        flex-direction: column;
+      }
+
+      .sidebar {
+        width: 100%;
+        border-left: none;
+        border-top: 1px solid #333;
+      }
+
+      .main {
+        padding: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="nav-links">
+       <a href="anime%20goo.html">anime goo</a>
+      <br>
+      <a   href="#">Popüler Animeler</a>
+      <br>
+      <a href="#">Tercih Edilenler</a>
+      <br>
+      <a href="#">Hakımda</a>
+    </div>
+    <div class="search-box"></div>
+  </header>
+
+
+
+  <div class="main">
+    <div class="video-wrapper">
+      <iframe src="" allowfullscreen></iframe>
+    </div>
+
+    <div class="description">
+      <h2>Bölüm Açıklaması</h2>
+      <p>
+        Bu bölümde kahramanımız kendini büyük bir çatışmanın içinde bulur. İhanet, dostluk ve büyük kararların verildiği anlar izleyiciyi ekran başına kilitliyor.
+      </p>
+    </div>
+  </div>
+
+  <div class="sidebar">
+    <h2>1.Sezon</h2>
+    <ul>
+      <li><a href="#">1. Bölüm</a></li>
+      <li><a href="#">2. Bölüm</a></li>
+      <li><a href="#">3. Bölüm</a></li>
+      <li><a href="#">4. Bölüm</a></li>
+      <li><a href="#">5. Bölüm</a></li>
+    </ul>
+
+    <h2>2.Sezon</h2>
+    <ul>
+      <li><a href="#">Sezon 1</a></li>
+      <li><a href="#">Sezon 2</a></li>
+      <li><a href="#">Sezon 3</a></li>
+    </ul>
+  </div>
+
+</body>
+</html>

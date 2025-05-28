@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hakkımda - Destek</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to right, #2c003e, #1e1e40, #000);
+      color: white;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      padding: 20px;
+      background-color: #1e1e40;
+    }
+
+    .nav-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 15px;
+      justify-content: center;
+      text-align: center;
+    }
+
+    .nav-links a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      padding: 8px 12px;
+      border-radius: 6px;
+      background-color: rgba(255, 255, 255, 0.1);
+    }
+
+    .nav-links a:hover {
+      background-color: rgba(255, 255, 255, 0.2);
+    }
+
+    .container {
+      max-width: 800px;
+      margin: auto;
+      padding: 20px;
+    }
+
+    h1, h2 {
+      color: #b184f4;
+    }
+
+    p {
+      font-size: 16px;
+      line-height: 1.6;
+    }
+
+    .social-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-bottom: 20px;
+    }
+
+    .social-links a {
+      color: #61dafb;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .help-form {
+      margin-top: 30px;
+      background-color: #2c2c2c;
+      padding: 20px;
+      border-radius: 10px;
+    }
+
+    .help-form input,
+    .help-form textarea {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+      border: none;
+      border-radius: 5px;
+      font-size: 16px;
+    }
+
+    .help-form input[type="submit"] {
+      background-color: #6a0dad;
+      color: white;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    .help-form input[type="submit"]:hover {
+      background-color: #8533ff;
+    }
+
+    @media (max-width: 600px) {
+      .nav-links {
+        flex-direction: column;
+        gap: 10px;
+      }
+
+      .social-links {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="nav-links">
+        <div class="nav-links">
+      <a href="anime%20goo.html">anime goo</a>
+        <br>
+      <a   href="#">Popüler </a>
+        <br>
+      <a href="#">Seri </a>
+        <br>
+    <a href="#">Türkçe Dublajlı</a>
+      <a href="Hakımda%20-%20Destek.html">Hakımda / Destek</a>
+    </div>
+    <div class="search-box"></div>
+    </div>
+  </header>
+
+  <div class="container">
+    <h1>Hakkımda</h1>
+    <p>Merhaba, ben bu sitenin kurucusuyum. Anime ve yazılım tutkunu birisiyim.
+      Amacım insanlara kaliteli ve düzenli bir anime izleme platformu sunmak.
+      Sitemde hem popüler seriler hem de özel içerikler bulabilirsin.</p>
+
+    <h2>İletişim</h2>
+    <div class="social-links">
+      <a href="https://instagram.com/uq.wst" target="_blank">Instagram</a>
+      <a href="https://twitter.com/x" target="_blank">Twitter</a>
+      <a href="https://mail.google.com/mail/" target="_blank">Mail</a>
+      <a href="http://telegram.org/x" target="_blank">Telegram</a>
+      <a href="http://discord.com/x" target="_blank">Discord</a>
+    </div>
+
+    <h2>Şikayet / Öneri</h2>
+    <p>Herhangi bir sorun, öneri veya istek için aşağıdaki formu kullanabilirsin.</p>
+
+    <form class="help-form" method="POST" enctype="multipart/form-data" action="">
+      <label for="isim">İsim:</label>
+      <input type="text" name="isim" id="isim" placeholder="ahmet...  yıldırım..." required>
+
+
+      <label for="message">Sorunun veya önerin:</label>
+      <textarea id="message" name="message" rows="5" required></textarea>
+
+      <label for="image">Ekran görüntüsü (isteğe bağlı):</label>
+      <input type="file" id="image" name="image" accept="image/*">
+
+      <input type="submit" value="Gönder">
+    </form>
+  </div>
+
+</body>
+</html>
